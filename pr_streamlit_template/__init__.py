@@ -6,9 +6,7 @@ from pkg_resources import resource_filename
 
 def streamlit_custom_page():
     # Page layout config
-    logo_path = resource_filename(
-        "pr_streamlit_template", "../assets/images/logo_coe.png"
-    )
+    logo_path = resource_filename("pr_streamlit_template", "assets/images/logo_coe.png")
     st.set_page_config(
         page_title="", page_icon=logo_path, layout="wide", initial_sidebar_state="auto"
     )
@@ -47,12 +45,8 @@ def streamlit_custom_page():
         return
 
     set_png_as_page_bg(
-        resource_filename(
-            "pr_streamlit_template", "../assets/images/background_image.png"
-        )
+        resource_filename("pr_streamlit_template", "assets/images/background_image.png")
     )
 
     # Call the css PR template
-    local_css(
-        resource_filename("pr_streamlit_template", "../assets/css/streamlit_PR.css")
-    )
+    local_css(resource_filename("pr_streamlit_template", "assets/css/streamlit_PR.css"))
