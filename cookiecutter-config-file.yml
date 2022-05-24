@@ -1,0 +1,13 @@
+# This file contains values from Cookiecutter
+
+default_context:
+  project_name: "pr-streamlit-template"
+  project_description: "A PR streamlit template"
+  organization: "gamcoh"
+  license: "MIT"
+  minimal_python_version: 3.8
+  github_name: "gamcoh"
+  email: "cohengamliel8@gmail.com"
+  version: "0.1.0"
+  line_length: "88"
+  create_example_template: "none"
