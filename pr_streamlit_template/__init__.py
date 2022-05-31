@@ -4,12 +4,25 @@ import streamlit as st
 from pkg_resources import resource_filename
 
 
-def streamlit_custom_page():
+def streamlit_custom_page(set_page_config: bool = True) -> None:
+    """Render the PR UI streamlit template.
+
+    Args:
+        set_page_config (bool, optional): Sets the streamlit page config. Defaults to True.
+
+    Returns:
+        None.
+    """
     # Page layout config
     logo_path = resource_filename("pr_streamlit_template", "assets/images/logo_coe.png")
-    st.set_page_config(
-        page_title="", page_icon=logo_path, layout="wide", initial_sidebar_state="auto"
-    )
+
+    if set_page_config:
+        st.set_page_config(
+            page_title="",
+            page_icon=logo_path,
+            layout="wide",
+            initial_sidebar_state="auto",
+        )
 
     # CoE logo on the sidebar
     st.sidebar.image(logo_path)
