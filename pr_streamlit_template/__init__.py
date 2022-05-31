@@ -1,17 +1,16 @@
+from typing import Optional
+
 import base64
 
 import streamlit as st
 from pkg_resources import resource_filename
 
 
-def streamlit_custom_page(set_page_config: bool = True) -> None:
+def streamlit_custom_page(set_page_config: Optional[bool] = True) -> None:
     """Render the PR UI streamlit template.
 
     Args:
         set_page_config (bool, optional): Sets the streamlit page config. Defaults to True.
-
-    Returns:
-        None.
     """
     # Page layout config
     logo_path = resource_filename("pr_streamlit_template", "assets/images/logo_coe.png")
