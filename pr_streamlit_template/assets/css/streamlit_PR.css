@@ -75,6 +75,7 @@ div.stApp.streamlit-wide header[data-testid="stHeader"] {
   background-color: transparent;
 }
 
-section[data-testid="stSidebar"] div.stRadio div{
+section[data-testid="stSidebar"] div.stRadio div,
+section[data-testid="stSidebar"] div[data-testid="stSidebarNav"] a span{
   color: #FFFFFF !important;
 }
