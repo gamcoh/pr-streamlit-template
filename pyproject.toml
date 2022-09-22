@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pr-streamlit-template"
-version = "0.2.2"
+version = "0.2.3"
 description = "A PR streamlit template"
 readme = "README.md"
 authors = ["gamcoh <cohengamliel8@gmail.com>"]

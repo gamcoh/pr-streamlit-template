@@ -21,6 +21,10 @@ section[data-testid="stSidebar"] > * {
   color: #FFFFFF !important;
 }
 
+section[data-testid="stSidebar"] a:visited {
+  color: #FFFFFF !important;
+}
+
 /* Label widgets sidebar */
 section[data-testid="stSidebar"] label{
   color: #FFFFFF !important;
