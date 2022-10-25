@@ -53,7 +53,7 @@ python-versions = ">=3.5"
 dev = ["cloudpickle", "coverage[toml] (>=5.0.2)", "furo", "hypothesis", "mypy (>=0.900,!=0.940)", "pre-commit", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "sphinx", "sphinx-notfound-page", "zope.interface"]
 docs = ["furo", "sphinx", "sphinx-notfound-page", "zope.interface"]
 tests = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "zope.interface"]
-tests_no_zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
+tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy (>=0.900,!=0.940)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins"]
 
 [[package]]
 name = "backports.zoneinfo"
@@ -148,7 +148,7 @@ optional = false
 python-versions = ">=3.6.0"
 
 [package.extras]
-unicode_backport = ["unicodedata2"]
+unicode-backport = ["unicodedata2"]
 
 [[package]]
 name = "click"
@@ -369,9 +369,9 @@ colorama = {version = ">=0.4.3,<0.5.0", optional = true, markers = "extra == \"c
 
 [package.extras]
 colors = ["colorama (>=0.4.3,<0.5.0)"]
-pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+pipfile-deprecated-finder = ["pipreqs", "requirementslib"]
 plugins = ["setuptools"]
-requirements_deprecated_finder = ["pip-api", "pipreqs"]
+requirements-deprecated-finder = ["pip-api", "pipreqs"]
 
 [[package]]
 name = "Jinja2"
@@ -735,13 +735,14 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "pytest-html"
-version = "3.1.1"
+version = "3.2.0"
 description = "pytest plugin for generating HTML reports"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
+py = ">=1.8.2"
 pytest = ">=5.0,<6.0.0 || >6.0.0"
 pytest-metadata = "*"
 
@@ -822,7 +823,7 @@ urllib3 = ">=1.21.1,<1.27"
 
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
-use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
+use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "rich"
@@ -1104,7 +1105,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "9657ce6c8ac93739dc91a292ae0799b1a3812da12fffad068cc594e1a3bf0c00"
+content-hash = "d2b1d3183f0c3d6316924808a4174edfd4e8b46c7a8cda71552061994971ed94"
 
 [metadata.files]
 altair = [
@@ -1591,7 +1592,6 @@ pre-commit = [
     {file = "pre_commit-2.20.0.tar.gz", hash = "sha256:a978dac7bc9ec0bcee55c18a277d553b0f419d259dadb4b9418ff2d00eb43959"},
 ]
 protobuf = [
-    {file = "protobuf-3.20.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:9f876a69ca55aed879b43c295a328970306e8e80a263ec91cf6e9189243c613b"},
     {file = "protobuf-3.20.2-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:09e25909c4297d71d97612f04f41cea8fa8510096864f2835ad2f3b3df5a5559"},
     {file = "protobuf-3.20.2-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e8fbc522303e09036c752a0afcc5c0603e917222d8bedc02813fd73b4b4ed804"},
     {file = "protobuf-3.20.2-cp310-cp310-win32.whl", hash = "sha256:84a1544252a933ef07bb0b5ef13afe7c36232a774affa673fc3636f7cee1db6c"},
@@ -1703,8 +1703,8 @@ pytest-cov = [
     {file = "pytest_cov-3.0.0-py3-none-any.whl", hash = "sha256:578d5d15ac4a25e5f961c938b85a05b09fdaae9deef3bb6de9a6e766622ca7a6"},
 ]
 pytest-html = [
-    {file = "pytest-html-3.1.1.tar.gz", hash = "sha256:3ee1cf319c913d19fe53aeb0bc400e7b0bc2dbeb477553733db1dad12eb75ee3"},
-    {file = "pytest_html-3.1.1-py3-none-any.whl", hash = "sha256:b7f82f123936a3f4d2950bc993c2c1ca09ce262c9ae12f9ac763a2401380b455"},
+    {file = "pytest-html-3.2.0.tar.gz", hash = "sha256:c4e2f4bb0bffc437f51ad2174a8a3e71df81bbc2f6894604e604af18fbe687c3"},
+    {file = "pytest_html-3.2.0-py3-none-any.whl", hash = "sha256:868c08564a68d8b2c26866f1e33178419bb35b1e127c33784a28622eb827f3f3"},
 ]
 pytest-metadata = [
     {file = "pytest-metadata-2.0.2.tar.gz", hash = "sha256:fcd2f416f15be295943527b3c8ba16a44ae5a7141939c90c3dc5ce9d167cf2a5"},
