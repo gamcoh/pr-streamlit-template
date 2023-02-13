@@ -2,9 +2,9 @@
 footer {visibility: hidden;}
 
 
-/* Footer CoE */
+/* Footer Global Data */
 footer:after {
-	content:'Made with \1F499  by your CoE team';
+	content:'Made with \1F499  by your Global Data team';
 	visibility: visible;
 	display: block;
 	position: relative;

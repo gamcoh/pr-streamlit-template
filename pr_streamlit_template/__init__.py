@@ -13,7 +13,9 @@ def streamlit_custom_page(set_page_config: Optional[bool] = True) -> None:
         set_page_config (bool, optional): Sets the streamlit page config. Defaults to True.
     """
     # Page layout config
-    logo_path = resource_filename("pr_streamlit_template", "assets/images/logo_coe.png")
+    logo_path = resource_filename(
+        "pr_streamlit_template", "assets/images/logo_global_data.png"
+    )
 
     if set_page_config:
         st.set_page_config(
