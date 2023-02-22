@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pr-streamlit-template"
-version = "0.2.3"
+version = "0.2.4"
 description = "A PR streamlit template"
 readme = "README.md"
 authors = ["gamcoh <cohengamliel8@gmail.com>"]
@@ -14,7 +14,7 @@ repository = "https://github.com/gamcoh/pr-streamlit-template"
 homepage = "https://github.com/gamcoh/pr-streamlit-template"
 
 # Keywords description https://python-poetry.org/docs/pyproject/#keywords
-keywords = []  #! Update me
+keywords = ["Pernod Ricard", "PR", "Data", "Global Data", "Data COE"]  #! Update me
 
 # Pypi classifiers: https://pypi.org/classifiers/
 classifiers = [  #! Update me
