@@ -35,7 +35,7 @@ def streamlit_custom_page(set_page_config: Optional[bool] = True) -> None:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     # Background image
-    @st.cache(allow_output_mutation=True)
+    @st.cache_data
     def get_base64_of_bin_file(bin_file):
         with open(bin_file, "rb") as f:
             data = f.read()

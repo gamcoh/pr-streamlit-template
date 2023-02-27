@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pr-streamlit-template"
-version = "0.2.4"
+version = "0.3.0"
 description = "A PR streamlit template"
 readme = "README.md"
 authors = ["gamcoh <cohengamliel8@gmail.com>"]
@@ -32,7 +32,7 @@ classifiers = [  #! Update me
 
 [tool.poetry.dependencies]
 python = "^3.8"
-streamlit = "^1.9.0"
+streamlit = "^1.19.0"
 
 [tool.poetry.dev-dependencies]
 bandit = "^1.7.1"
